@@ -1,0 +1,2692 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Earnings Calendar — January 2026</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121823;
+      --muted: #9aa4b2;
+      --text: #e8edf3;
+      --border: #223043;
+      --chip: #1a2433;
+      --chip-border: #2a3a52;
+      --accent: #6aa6ff;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 2000px;
+      margin: 0 auto;
+      padding: 36px 24px 56px;
+    }
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 0;
+      font-weight: 750;
+      letter-spacing: 0.2px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 14px;
+    }
+    .dow {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      padding: 0 8px;
+    }
+    .cell {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+
+      min-height: 165px;    
+      max-height: 320px;      
+
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      overflow: hidden;       
+    }
+    .cell.other-month {
+      opacity: 0.45;
+    }
+    .daynum {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .daynum .n {
+      font-weight: 800;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .chips {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      overflow-y: auto;     
+      padding-right: 6px;    
+    }
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--chip-border);
+      border-radius: 10px;
+      padding: 8px 10px;      /* was 10px 10px */
+      line-height: 1.2;
+    }
+    .chip .top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+    }
+    .ticker {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .name {
+      font-size: 13px;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+    }
+    .meta {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+    }
+    .pill {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Earnings Calendar</h1>
+        <div class="sub">January 2026</div>
+      </div>
+      <div class="sub">Source: Bloomberg</div>
+    </header>
+
+    <div class="grid" aria-label="calendar">
+      <div class="dow">Mon</div><div class="dow">Tue</div><div class="dow">Wed</div><div class="dow">Thu</div><div class="dow">Fri</div><div class="dow">Sat</div><div class="dow">Sun</div>
+    </div>
+
+    <div class="grid" style="margin-top:10px;">
+
+      <div class="cell other-month">
+        <div class="daynum">
+          <span class="n">29</span>
+          <span>2025-12-29</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell other-month">
+        <div class="daynum">
+          <span class="n">30</span>
+          <span>2025-12-30</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell other-month">
+        <div class="daynum">
+          <span class="n">31</span>
+          <span>2025-12-31</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">1</span>
+          <span>2026-01-01</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">2</span>
+          <span>2026-01-02</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">3</span>
+          <span>2026-01-03</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">4</span>
+          <span>2026-01-04</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">5</span>
+          <span>2026-01-05</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2678 JP</div>
+            <div class="name" title="ASKUL Corp">ASKUL Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3186 JP</div>
+            <div class="name" title="Nextage Co Ltd">Nextage Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">6</span>
+          <span>2026-01-06</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4530 JP</div>
+            <div class="name" title="Hisamitsu Pharmaceutical Co In">Hisamitsu Pharmaceutical Co In</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4530 JP</div>
+            <div class="name" title="Hisamitsu Pharmaceutical Co In">Hisamitsu Pharmaceutical Co In</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2670 JP</div>
+            <div class="name" title="ABC-Mart Inc">ABC-Mart Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8233 JP</div>
+            <div class="name" title="Takashimaya Co Ltd">Takashimaya Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">7</span>
+          <span>2026-01-07</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2670 JP</div>
+            <div class="name" title="ABC-Mart Inc">ABC-Mart Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9861 JP</div>
+            <div class="name" title="Yoshinoya Holdings Co Ltd">Yoshinoya Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3046 JP</div>
+            <div class="name" title="JINS Holdings Inc">JINS Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">8</span>
+          <span>2026-01-08</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3382 JP</div>
+            <div class="name" title="Seven & i Holdings Co Ltd">Seven & i Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9983 JP</div>
+            <div class="name" title="Fast Retailing Co Ltd">Fast Retailing Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9983 JP</div>
+            <div class="name" title="Fast Retailing Co Ltd">Fast Retailing Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8725 JP</div>
+            <div class="name" title="MS&AD Insurance Group Holdings">MS&AD Insurance Group Holdings</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3391 JP</div>
+            <div class="name" title="Tsuruha Holdings Inc">Tsuruha Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8570 JP</div>
+            <div class="name" title="AEON Financial Service Co Ltd">AEON Financial Service Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8570 JP</div>
+            <div class="name" title="AEON Financial Service Co Ltd">AEON Financial Service Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3391 JP</div>
+            <div class="name" title="Tsuruha Holdings Inc">Tsuruha Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7649 JP</div>
+            <div class="name" title="Sugi Holdings Co Ltd">Sugi Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8267 JP</div>
+            <div class="name" title="Aeon Co Ltd">Aeon Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">9</span>
+          <span>2026-01-09</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6323 JP</div>
+            <div class="name" title="Rorze Corp">Rorze Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1928 JP</div>
+            <div class="name" title="Sekisui House Ltd">Sekisui House Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8918 JP</div>
+            <div class="name" title="LAND Co Ltd">LAND Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6814 JP</div>
+            <div class="name" title="Furuno Electric Co Ltd">Furuno Electric Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6506 JP</div>
+            <div class="name" title="Yaskawa Electric Corp">Yaskawa Electric Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3046 JP</div>
+            <div class="name" title="JINS Holdings Inc">JINS Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">10</span>
+          <span>2026-01-10</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">11</span>
+          <span>2026-01-11</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">12</span>
+          <span>2026-01-12</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">13</span>
+          <span>2026-01-13</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6432 JP</div>
+            <div class="name" title="Takeuchi Manufacturing Co Ltd">Takeuchi Manufacturing Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7599 JP</div>
+            <div class="name" title="IDOM Inc">IDOM Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5243 JP</div>
+            <div class="name" title="note inc">note inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3498 JP</div>
+            <div class="name" title="Kasumigaseki Capital Co Ltd">Kasumigaseki Capital Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3349 JP</div>
+            <div class="name" title="Cosmos Pharmaceutical Corp">Cosmos Pharmaceutical Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">325A JP</div>
+            <div class="name" title="Tential Inc">Tential Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2726 JP</div>
+            <div class="name" title="PAL GROUP Holdings Co Ltd">PAL GROUP Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">14</span>
+          <span>2026-01-14</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3994 JP</div>
+            <div class="name" title="Money Forward Inc">Money Forward Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3994 JP</div>
+            <div class="name" title="Money Forward Inc">Money Forward Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4443 JP</div>
+            <div class="name" title="Sansan Inc">Sansan Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9602 JP</div>
+            <div class="name" title="Toho Co Ltd/Tokyo">Toho Co Ltd/Tokyo</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3048 JP</div>
+            <div class="name" title="Bic Camera Inc">Bic Camera Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2809 JP</div>
+            <div class="name" title="Kewpie Corp">Kewpie Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2809 JP</div>
+            <div class="name" title="Kewpie Corp">Kewpie Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1407 JP</div>
+            <div class="name" title="West Holdings Corp">West Holdings Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3697 JP</div>
+            <div class="name" title="SHIFT Inc">SHIFT Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7581 JP</div>
+            <div class="name" title="Saizeriya Co Ltd">Saizeriya Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6532 JP</div>
+            <div class="name" title="BayCurrent Inc">BayCurrent Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">402A JP</div>
+            <div class="name" title="Axelspace Holdings Corp">Axelspace Holdings Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7453 JP</div>
+            <div class="name" title="Ryohin Keikaku Co Ltd">Ryohin Keikaku Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9418 JP</div>
+            <div class="name" title="U-Next Holdings Co Ltd">U-Next Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">15</span>
+          <span>2026-01-15</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">16</span>
+          <span>2026-01-16</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3593 JP</div>
+            <div class="name" title="Hogy Medical Co Ltd">Hogy Medical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">17</span>
+          <span>2026-01-17</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">18</span>
+          <span>2026-01-18</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">19</span>
+          <span>2026-01-19</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">464A JP</div>
+            <div class="name" title="QPS Holdings Inc">QPS Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">20</span>
+          <span>2026-01-20</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">469A JP</div>
+            <div class="name" title="Fitcrew Inc">Fitcrew Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8960 JP</div>
+            <div class="name" title="United Urban Investment Corp">United Urban Investment Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">21</span>
+          <span>2026-01-21</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6146 JP</div>
+            <div class="name" title="Disco Corp">Disco Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">15:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6146 JP</div>
+            <div class="name" title="Disco Corp">Disco Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3283 JP</div>
+            <div class="name" title="Nippon Prologis REIT Inc">Nippon Prologis REIT Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S2 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8960 JP</div>
+            <div class="name" title="United Urban Investment Corp">United Urban Investment Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3038 JP</div>
+            <div class="name" title="Kobe Bussan Co Ltd">Kobe Bussan Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">25 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">22</span>
+          <span>2026-01-22</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">23</span>
+          <span>2026-01-23</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8227 JP</div>
+            <div class="name" title="Shimamura Co Ltd">Shimamura Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">26 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6629 JP</div>
+            <div class="name" title="TECHNO HORIZON Co Ltd">TECHNO HORIZON Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4684 JP</div>
+            <div class="name" title="Obic Co Ltd">Obic Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4733 JP</div>
+            <div class="name" title="OBIC Business Consultants Co L">OBIC Business Consultants Co L</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">24</span>
+          <span>2026-01-24</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">25</span>
+          <span>2026-01-25</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">26</span>
+          <span>2026-01-26</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6988 JP</div>
+            <div class="name" title="Nitto Denko Corp">Nitto Denko Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">27</span>
+          <span>2026-01-27</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4063 JP</div>
+            <div class="name" title="Shin-Etsu Chemical Co Ltd">Shin-Etsu Chemical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6954 JP</div>
+            <div class="name" title="FANUC Corp">FANUC Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3635 JP</div>
+            <div class="name" title="Koei Tecmo Holdings Co Ltd">Koei Tecmo Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9697 JP</div>
+            <div class="name" title="Capcom Co Ltd">Capcom Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">28</span>
+          <span>2026-01-28</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3231 JP</div>
+            <div class="name" title="Nomura Real Estate Holdings In">Nomura Real Estate Holdings In</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8174 JP</div>
+            <div class="name" title="Nippon Gas Co Ltd">Nippon Gas Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2678 JP</div>
+            <div class="name" title="ASKUL Corp">ASKUL Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">26 Sales Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6857 JP</div>
+            <div class="name" title="Advantest Corp">Advantest Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">29</span>
+          <span>2026-01-29</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6305 JP</div>
+            <div class="name" title="Hitachi Construction Machinery">Hitachi Construction Machinery</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4519 JP</div>
+            <div class="name" title="Chugai Pharmaceutical Co Ltd">Chugai Pharmaceutical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">16:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6305 JP</div>
+            <div class="name" title="Hitachi Construction Machinery">Hitachi Construction Machinery</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">16:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4519 JP</div>
+            <div class="name" title="Chugai Pharmaceutical Co Ltd">Chugai Pharmaceutical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25  Earning Call</span>
+          <span class="pill">17:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5191 JP</div>
+            <div class="name" title="Sumitomo Riko Co Ltd">Sumitomo Riko Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8316 JP</div>
+            <div class="name" title="Sumitomo Mitsui Financial Grou">Sumitomo Mitsui Financial Grou</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6807 JP</div>
+            <div class="name" title="Japan Aviation Electronics Ind">Japan Aviation Electronics Ind</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8060 JP</div>
+            <div class="name" title="Canon Marketing Japan Inc">Canon Marketing Japan Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4751 JP</div>
+            <div class="name" title="CyberAgent Inc">CyberAgent Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5344 JP</div>
+            <div class="name" title="Maruwa Co Ltd/Aichi">Maruwa Co Ltd/Aichi</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4461 JP</div>
+            <div class="name" title="DKS Co Ltd">DKS Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9507 JP</div>
+            <div class="name" title="Shikoku Electric Power Co Inc">Shikoku Electric Power Co Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5857 JP</div>
+            <div class="name" title="ARE Holdings Inc">ARE Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6923 JP</div>
+            <div class="name" title="Stanley Electric Co Ltd">Stanley Electric Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4661 JP</div>
+            <div class="name" title="Oriental Land Co Ltd/Japan">Oriental Land Co Ltd/Japan</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6586 JP</div>
+            <div class="name" title="Makita Corp">Makita Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3003 JP</div>
+            <div class="name" title="Hulic Co Ltd">Hulic Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9044 JP</div>
+            <div class="name" title="Nankai Electric Railway Co Ltd">Nankai Electric Railway Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4307 JP</div>
+            <div class="name" title="Nomura Research Institute Ltd">Nomura Research Institute Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9505 JP</div>
+            <div class="name" title="Hokuriku Electric Power Co">Hokuriku Electric Power Co</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">30</span>
+          <span>2026-01-30</span>
+        </div>
+        <div class="chips">
+          
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5929 JP</div>
+            <div class="name" title="Sanwa Holdings Corp">Sanwa Holdings Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">10:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7741 JP</div>
+            <div class="name" title="Hoya Corp">Hoya Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">12:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4205 JP</div>
+            <div class="name" title="Zeon Corp">Zeon Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2327 JP</div>
+            <div class="name" title="NS Solutions Corp">NS Solutions Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8604 JP</div>
+            <div class="name" title="Nomura Holdings Inc">Nomura Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7735 JP</div>
+            <div class="name" title="SCREEN Holdings Co Ltd">SCREEN Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">14:35</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4205 JP</div>
+            <div class="name" title="Zeon Corp">Zeon Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">15:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5334 JP</div>
+            <div class="name" title="Niterra Co Ltd">Niterra Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">15:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8604 JP</div>
+            <div class="name" title="Nomura Holdings Inc">Nomura Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">17:30</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2875 JP</div>
+            <div class="name" title="Toyo Suisan Kaisha Ltd">Toyo Suisan Kaisha Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7282 JP</div>
+            <div class="name" title="Toyoda Gosei Co Ltd">Toyoda Gosei Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9962 JP</div>
+            <div class="name" title="MISUMI Group Inc">MISUMI Group Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8366 JP</div>
+            <div class="name" title="Shiga Bank Ltd/The">Shiga Bank Ltd/The</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9021 JP</div>
+            <div class="name" title="West Japan Railway Co">West Japan Railway Co</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9301 JP</div>
+            <div class="name" title="Mitsubishi Logistics Corp">Mitsubishi Logistics Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3092 JP</div>
+            <div class="name" title="ZOZO Inc">ZOZO Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5332 JP</div>
+            <div class="name" title="TOTO Ltd">TOTO Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9719 JP</div>
+            <div class="name" title="SCSK Corp">SCSK Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5844 JP</div>
+            <div class="name" title="Kyoto Financial Group Inc">Kyoto Financial Group Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5938 JP</div>
+            <div class="name" title="Lixil Corp">Lixil Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9513 JP</div>
+            <div class="name" title="Electric Power Development Co">Electric Power Development Co</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6946 JP</div>
+            <div class="name" title="Nippon Avionics Co Ltd">Nippon Avionics Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9533 JP</div>
+            <div class="name" title="Toho Gas Co Ltd">Toho Gas Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7419 JP</div>
+            <div class="name" title="Nojima Corp">Nojima Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8697 JP</div>
+            <div class="name" title="Japan Exchange Group Inc">Japan Exchange Group Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9744 JP</div>
+            <div class="name" title="MEITEC Group Holdings Inc">MEITEC Group Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4204 JP</div>
+            <div class="name" title="Sekisui Chemical Co Ltd">Sekisui Chemical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7276 JP</div>
+            <div class="name" title="Koito Manufacturing Co Ltd">Koito Manufacturing Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7205 JP</div>
+            <div class="name" title="Hino Motors Ltd">Hino Motors Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6754 JP</div>
+            <div class="name" title="Anritsu Corp">Anritsu Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8714 JP</div>
+            <div class="name" title="Senshu Ikeda Holdings Inc">Senshu Ikeda Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7751 JP</div>
+            <div class="name" title="Canon Inc">Canon Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Y 25 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6504 JP</div>
+            <div class="name" title="Fuji Electric Co Ltd">Fuji Electric Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4502 JP</div>
+            <div class="name" title="Takeda Pharmaceutical Co Ltd">Takeda Pharmaceutical Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4816 JP</div>
+            <div class="name" title="Toei Animation Co Ltd">Toei Animation Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9104 JP</div>
+            <div class="name" title="Mitsui OSK Lines Ltd">Mitsui OSK Lines Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9501 JP</div>
+            <div class="name" title="Tokyo Electric Power Co Holdin">Tokyo Electric Power Co Holdin</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6902 JP</div>
+            <div class="name" title="Denso Corp">Denso Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6201 JP</div>
+            <div class="name" title="Toyota Industries Corp">Toyota Industries Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9506 JP</div>
+            <div class="name" title="Tohoku Electric Power Co Inc">Tohoku Electric Power Co Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1944 JP</div>
+            <div class="name" title="Kinden Corp">Kinden Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9509 JP</div>
+            <div class="name" title="Hokkaido Electric Power Co Inc">Hokkaido Electric Power Co Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6961 JP</div>
+            <div class="name" title="Enplas Corp">Enplas Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6135 JP</div>
+            <div class="name" title="Makino Milling Machine Co Ltd">Makino Milling Machine Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9065 JP</div>
+            <div class="name" title="Sankyu Inc">Sankyu Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9508 JP</div>
+            <div class="name" title="Kyushu Electric Power Co Inc">Kyushu Electric Power Co Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6920 JP</div>
+            <div class="name" title="Lasertec Corp">Lasertec Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">S1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7327 JP</div>
+            <div class="name" title="Daishi Hokuetsu Financial Grou">Daishi Hokuetsu Financial Grou</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7148 JP</div>
+            <div class="name" title="Financial Partners Group Co Lt">Financial Partners Group Co Lt</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q1 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4506 JP</div>
+            <div class="name" title="Sumitomo Pharma Co Ltd">Sumitomo Pharma Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6702 JP</div>
+            <div class="name" title="Fujitsu Ltd">Fujitsu Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6501 JP</div>
+            <div class="name" title="Hitachi Ltd">Hitachi Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7173 JP</div>
+            <div class="name" title="Tokyo Kiraboshi Financial Grou">Tokyo Kiraboshi Financial Grou</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6526 JP</div>
+            <div class="name" title="Socionext Inc">Socionext Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5333 JP</div>
+            <div class="name" title="NGK Insulators Ltd">NGK Insulators Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2282 JP</div>
+            <div class="name" title="NH Foods Ltd">NH Foods Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6861 JP</div>
+            <div class="name" title="Keyence Corp">Keyence Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8309 JP</div>
+            <div class="name" title="Sumitomo Mitsui Trust Group In">Sumitomo Mitsui Trust Group In</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9503 JP</div>
+            <div class="name" title="Kansai Electric Power Co Inc/T">Kansai Electric Power Co Inc/T</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3116 JP</div>
+            <div class="name" title="Toyota Boshoku Corp">Toyota Boshoku Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9531 JP</div>
+            <div class="name" title="Tokyo Gas Co Ltd">Tokyo Gas Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5482 JP</div>
+            <div class="name" title="Aichi Steel Corp">Aichi Steel Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6724 JP</div>
+            <div class="name" title="Seiko Epson Corp">Seiko Epson Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9766 JP</div>
+            <div class="name" title="Konami Group Corp">Konami Group Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4043 JP</div>
+            <div class="name" title="Tokuyama Corp">Tokuyama Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">5471 JP</div>
+            <div class="name" title="Daido Steel Co Ltd">Daido Steel Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8601 JP</div>
+            <div class="name" title="Daiwa Securities Group Inc">Daiwa Securities Group Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4568 JP</div>
+            <div class="name" title="Daiichi Sankyo Co Ltd">Daiichi Sankyo Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1803 JP</div>
+            <div class="name" title="Shimizu Corp">Shimizu Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1949 JP</div>
+            <div class="name" title="Sumitomo Densetsu Co Ltd">Sumitomo Densetsu Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1942 JP</div>
+            <div class="name" title="Kandenko Co Ltd">Kandenko Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8341 JP</div>
+            <div class="name" title="77 Bank Ltd/The">77 Bank Ltd/The</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8015 JP</div>
+            <div class="name" title="Toyota Tsusho Corp">Toyota Tsusho Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6473 JP</div>
+            <div class="name" title="JTEKT Corp">JTEKT Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9009 JP</div>
+            <div class="name" title="Keisei Electric Railway Co Ltd">Keisei Electric Railway Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6508 JP</div>
+            <div class="name" title="Meidensha Corp">Meidensha Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">4507 JP</div>
+            <div class="name" title="Shionogi & Co Ltd">Shionogi & Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6770 JP</div>
+            <div class="name" title="Alps Alpine Co Ltd">Alps Alpine Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2127 JP</div>
+            <div class="name" title="Nihon M&A Center Holdings Inc">Nihon M&A Center Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2127 JP</div>
+            <div class="name" title="Nihon M&A Center Holdings Inc">Nihon M&A Center Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1878 JP</div>
+            <div class="name" title="Daito Trust Construction Co Lt">Daito Trust Construction Co Lt</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1878 JP</div>
+            <div class="name" title="Daito Trust Construction Co Lt">Daito Trust Construction Co Lt</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7259 JP</div>
+            <div class="name" title="Aisin Corp">Aisin Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">1959 JP</div>
+            <div class="name" title="Kraftia Corp">Kraftia Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8308 JP</div>
+            <div class="name" title="Resona Holdings Inc">Resona Holdings Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6701 JP</div>
+            <div class="name" title="NEC Corp">NEC Corp</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6331 JP</div>
+            <div class="name" title="Mitsubishi Kakoki Kaisha Ltd">Mitsubishi Kakoki Kaisha Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">3778 JP</div>
+            <div class="name" title="Sakura Internet Inc">Sakura Internet Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">8572 JP</div>
+            <div class="name" title="Acom Co Ltd">Acom Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">2002 JP</div>
+            <div class="name" title="Nisshin Seifun Group Inc">Nisshin Seifun Group Inc</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">7735 JP</div>
+            <div class="name" title="SCREEN Holdings Co Ltd">SCREEN Holdings Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26  Earning Call</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9759 JP</div>
+            <div class="name" title="NSD Co Ltd">NSD Co Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">6301 JP</div>
+            <div class="name" title="Komatsu Ltd">Komatsu Ltd</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        <div class="chip">
+          <div class="top">
+            <div class="ticker">9504 JP</div>
+            <div class="name" title="Chugoku Electric Power Co Inc/">Chugoku Electric Power Co Inc/</div>
+          </div>
+          <div class="meta">
+            <span class="pill">Q3 26 Earnings Release</span>
+          <span class="pill">19:00</span>
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="cell">
+        <div class="daynum">
+          <span class="n">31</span>
+          <span>2026-01-31</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+      <div class="cell other-month">
+        <div class="daynum">
+          <span class="n">1</span>
+          <span>2026-02-01</span>
+        </div>
+        <div class="chips">
+          <div class="sub"> </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
